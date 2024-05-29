@@ -104,7 +104,7 @@ public class WebSecurityConfig { // extends WebSecurityConfigurerAdapter {
         );
     
  // fix H2 database console: Refused to display ' in a frame because it set 'X-Frame-Options' to 'deny'
-    http.headers(headers -> headers.frameOptions(frameOption -> frameOption.sameOrigin()));
+  //  http.headers(headers -> headers.frameOptions(frameOption -> frameOption.sameOrigin()));
     
     http.authenticationProvider(authenticationProvider());
 
